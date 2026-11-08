@@ -1,0 +1,10 @@
+from pathlib import Path
+root=Path('outputs')
+s=(root/'tomeris_desktop_v091.py').read_text(encoding='utf-8-sig')
+s=s.replace('v0.9.1','v0.10')
+s=s.replace('from tomeris_plans import DesktopService, validate, today','from tomeris_plans import DesktopService as PlanService, validate, today\nfrom tomeris_google import GoogleCalendar\nfrom tomeris_google_ui import GooglePanel\n\nclass DesktopService(PlanService):\n    def __init__(self,*args,**kwargs):\n        super().__init__(*args,**kwargs)\n        self.google=GoogleCalendar(self.data_dir)\n')
+s=s.replace("        refresh.pack(side='right'); self.controls.append(refresh)","        refresh.pack(side='right'); self.controls.append(refresh)\n        google=ttk.Button(header,text='Googleカレンダー',command=self.open_google)\n        google.pack(side='right',padx=8); self.controls.append(google)")
+s=s.replace("    def submit(self,kind,func,label):", "        panel=getattr(self,'google_panel',None)\n        if panel is not None:\n            panel.state()\n    def open_google(self):\n        if self.busy or self.closing:\n            return\n        if self.service.demo:\n            messagebox.showinfo('画面確認用','Google接続は通常起動で利用してください。',parent=self.root); return\n        self.google_panel=GooglePanel(self)\n    def submit(self,kind,func,label):")
+s=s.replace("                        if not (getattr(self,'plan_window',None) and self.plan_window.winfo_exists()):", "                        google_open=getattr(self,'google_panel',None) and self.google_panel.window.winfo_exists()\n                        if not google_open and not (getattr(self,'plan_window',None) and self.plan_window.winfo_exists()):")
+s=s.replace("        self.closing=True", "        self.closing=True\n        if self.service is not None:\n            self.service.google.cancel.set()")
+(root/'tomeris_desktop_v010.py').write_text(s,encoding='utf-8')

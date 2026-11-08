@@ -1,0 +1,6 @@
+[
+  {"topic":"情報検索","group":"retrieval","split":"train"},
+  {"topic":"トニースターク","group":"ironman","split":"train"},
+  {"topic":"統計学","group":"statistics","split":"test"},
+  {"topic":"ロバートダウニージュニア","group":"actor","split":"test"}
+]

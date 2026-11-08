@@ -1,0 +1,8 @@
+from pathlib import Path
+s=Path('outputs/tomeris_desktop_v021.py').read_text(encoding='utf-8-sig').replace('v0.21','v0.22')
+s=s.replace('        self.controls=[]','        self.controls=[]\n        self.last_answer=None')
+s=s.replace('        self.transcript=ScrolledText',"        copy_bar=tk.Frame(main,bg='#eef2f5'); copy_bar.pack(fill='x',pady=(0,6))\n        self.copy_button=ttk.Button(copy_bar,text='最後の回答をコピー',command=self.copy_answer,state='disabled')\n        self.copy_button.pack(side='right')\n        self.transcript=ScrolledText",1)
+s=s.replace("        self.memory_check=ttk.Checkbutton", "        self.last_answer=None\n        self.copy_button.configure(state='disabled')\n        self.memory_check=ttk.Checkbutton",1)
+s=s.replace('    def append(self,title,text):',"    def copy_answer(self):\n        if self.closing or self.busy or not self.last_answer: return\n        try:\n            self.root.clipboard_clear()\n            self.root.clipboard_append(self.last_answer)\n        except tk.TclError:\n            self.status.set('コピーできませんでした。もう一度お試しください。')\n            return\n        self.status.set('最後の回答をコピーしました。メモ帳などに貼り付けられます。')\n    def append(self,title,text):\n        if title=='トメリス' and text.strip():\n            self.last_answer=text\n            self.copy_button.configure(state='normal' if not self.busy and not self.closing else 'disabled')")
+s=s.replace('        active=not self.busy and not self.closing and self.service is not None',"        active=not self.busy and not self.closing and self.service is not None\n        self.copy_button.configure(state='normal' if active and self.last_answer else 'disabled')",1)
+Path('outputs/tomeris_desktop_v022.py').write_text(s,encoding='utf-8')

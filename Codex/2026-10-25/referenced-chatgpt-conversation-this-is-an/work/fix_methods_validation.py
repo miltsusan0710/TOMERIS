@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('outputs/tomeris_methods_ui.py');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("'設定済み・接続未確認'","'設定済み（実行時に確認）'")
+s=s.replace('            error,value=result\n            if error:', '            if not self.window.winfo_exists():return\n            error,value=result\n            self.state()\n            if error:')
+s=s.replace("        except (MethodError,OSError) as exc:self.message.set(str(exc))","        except (MethodError,OSError,webbrowser.Error) as exc:self.message.set(str(exc))")
+s=s.replace("            if webbrowser.open(path.resolve().as_uri()):self.message.set", "            try:opened=webbrowser.open(path.resolve().as_uri())\n            except (OSError,webbrowser.Error):opened=False\n            if opened:self.message.set")
+p.write_text(s,encoding='utf-8')
+p=Path('outputs/tomeris_search_methods.py');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("    for row in data.get('query',{}).get('search',[]):", "    group=data.get('query',{})\n    if not isinstance(group,dict) or not isinstance(group.get('search'),list):raise MethodError('Wikipedia検索の形式を確認できません。')\n    for row in group['search']:")
+s=s.replace("    for row in data.get('web',{}).get('results',[]):", "    group=data.get('web',{})\n    if not isinstance(group,dict) or not isinstance(group.get('results'),list):raise MethodError('Brave検索の形式を確認できません。')\n    for row in group['results']:")
+p.write_text(s,encoding='utf-8')

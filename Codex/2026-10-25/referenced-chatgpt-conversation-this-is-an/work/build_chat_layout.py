@@ -1,0 +1,40 @@
+from pathlib import Path
+s=Path('outputs/tomeris_desktop_v0301.py').read_text(encoding='utf-8').replace('v0.30.1','v0.31')
+s=s.replace("        self.make_ui()", "        self.show_sidebar=tk.BooleanVar(value=True)\n        self.show_chat_settings=tk.BooleanVar(value=False)\n        self.large_input=False\n        self.make_ui()",1)
+s=s.replace("        menu.add_command(label='使い方'", "        view_menu=tk.Menu(menu,tearoff=False)\n        view_menu.add_checkbutton(label='左メニューを表示',variable=self.show_sidebar,command=self.update_chat_layout)\n        view_menu.add_checkbutton(label='会話設定を表示',variable=self.show_chat_settings,command=self.update_chat_layout)\n        menu.add_cascade(label='表示',menu=view_menu)\n        menu.add_command(label='使い方'",1)
+s=s.replace("width=190,highlightbackground", "width=178,highlightbackground")
+s=s.replace("        side.grid(row=0", "        self.sidebar=side\n        side.grid(row=0",1)
+s=s.replace("padx=22,pady=12)","padx=14,pady=8)",1)
+s=s.replace("self.orb=Orb(main,self,height=120)","self.orb=Orb(main,self,height=48)")
+s=s.replace("pady=(0,10))", "pady=(0,4))",1)
+s=s.replace("pady=(0,12))", "pady=(0,6))",1)
+s=s.replace("        card=tk.Frame(main", "        options.grid_remove()\n        card=tk.Frame(main",1)
+s=s.replace("padx=16,pady=10)","padx=12,pady=6)",1)
+s=s.replace("text='会話  /  COMMUNICATION'", "text='会話'")
+s=s.replace("text='最後の回答をコピー'", "text='回答コピー'")
+s=s.replace("        self.chat_size=12", "        ttk.Button(bar,text='最新へ',command=lambda:self.transcript.see('end')).pack(side='right',padx=4)\n        self.chat_size=13")
+s=s.replace("padx=20,pady=14", "padx=18,pady=12")
+s=s.replace("font=('Yu Gothic UI',12,'bold'),spacing1=18", "font=('Yu Gothic UI',13,'bold'),spacing1=20")
+s=s.replace("spacing1=2,spacing2=4,spacing3=5", "spacing1=3,spacing2=6,spacing3=10")
+s=s.replace("pady=(12,0));compose", "pady=(8,0));compose")
+s=s.replace("        tk.Label(compose,text='メッセージ',bg='#08131f',fg='#c1dce8',font=('Yu Gothic UI',10,'bold')).grid(row=1,column=0,sticky='w',pady=(0,5))", "        self.input_size_button=ttk.Button(compose,text='入力欄を広げる',command=self.toggle_input_size)\n        self.input_size_button.grid(row=0,column=1,sticky='e',pady=(0,6))")
+a=s.index('    def fit_chat_layout(self,event):');b=s.index('    def change_text_size',a)
+s=s[:a]+'''    def update_chat_layout(self):
+        if self.show_sidebar.get():self.sidebar.grid()
+        else:self.sidebar.grid_remove()
+        if self.show_chat_settings.get():self.options_frame.grid()
+        else:self.options_frame.grid_remove()
+    def toggle_input_size(self):
+        self.large_input=not self.large_input
+        self.entry.configure(height=4 if self.large_input else 2)
+        self.input_size_button.configure(text='入力欄を縮める' if self.large_input else '入力欄を広げる')
+    def fit_chat_layout(self,event):
+        self.orb.configure(height=48)
+        dense=float(self.root.tk.call('tk','scaling'))>2 and event.height<900
+        if dense:self.connection_label.grid_remove()
+        else:self.connection_label.grid()
+        self.entry.configure(height=4 if self.large_input else 2)
+        self.status_label.configure(wraplength=max(250,event.width-8))
+''' +s[b:]
+s=s.replace('文字サイズは会話欄上の「小」「大」で変更できます。','文字サイズは会話欄上の「小」「大」で変更できます。「表示」メニューで左メニューや会話設定を表示できます。')
+Path('outputs/tomeris_desktop_v031.py').write_text(s,encoding='utf-8')

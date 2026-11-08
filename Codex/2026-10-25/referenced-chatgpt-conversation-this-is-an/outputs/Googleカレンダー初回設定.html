@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>トメリス：Googleカレンダーの初回設定</title>
+<style>body{font-family:"Yu Gothic UI",sans-serif;background:#eef2f5;color:#172d3a;line-height:1.9;margin:0}main{max-width:820px;margin:32px auto;background:white;padding:32px;border-radius:16px}h1{font-size:26px}h2{font-size:21px;margin-top:32px}a{color:#087f83}code{background:#eef2f5;padding:3px;overflow-wrap:anywhere}.note{border-left:4px solid #087f83;padding:12px 18px;background:#f0f8f8}li{margin:12px 0}small{color:#48626f}</style>
+<main><h1>Googleカレンダーをトメリスにつなぐ</h1>
+<p>最初に1回だけGoogle側で設定します。複数アカウントを同じ設定で追加できます。GeminiのAPIキーは使いません。</p>
+<p class="note">今回できるのは<strong>今日の予定の閲覧</strong>です。予定の作成・変更・削除、メールの閲覧・送信は行いません。表示した予定は会話履歴に保存せず、AIにも送信しません。</p>
+<h2>1. トメリス用のプロジェクトを作る</h2>
+<ol><li><a href="https://console.cloud.google.com/">Google Cloud Console</a>を開き、設定に使うGoogleアカウントでログインします。</li>
+<li>画面上部のプロジェクト選択から「新しいプロジェクト」を作成します。名前の例：<strong>Tomeris Personal</strong>。</li>
+<li>作成したプロジェクトを選択し、「APIとサービス」→「ライブラリ」で<strong>Google Calendar API</strong>を検索して有効にします。</li></ol>
+<h2>2. 接続許可の画面を用意する</h2>
+<ol><li>「Google Auth Platform」を開き、未設定なら「開始」を押します。アプリ名を<strong>トメリス</strong>にして、サポートメールと連絡先に自分のメールアドレスを指定します。</li>
+<li>個人のGoogleアカウントや別組織のアカウントを使う場合、対象（Audience）は<strong>外部 / External</strong>を選びます。</li>
+<li>公開ステータスはまず<strong>テスト / Testing</strong>にします。「テストユーザー」に、接続したいGoogleアカウントのメールアドレスを<strong>すべて</strong>追加します。</li>
+<li>「データアクセス」→「スコープを追加または削除」で下記の権限を追加し、保存します。メールアドレスはアカウントを区別するために使います。Gmailの本文は読みません。</li></ol>
+<ul><li><code>openid</code></li><li><code>https://www.googleapis.com/auth/userinfo.email</code></li>
+<li><code>https://www.googleapis.com/auth/calendar.calendarlist.readonly</code></li>
+<li><code>https://www.googleapis.com/auth/calendar.events.readonly</code></li></ul>
+<h2>3. デスクトップ用の設定ファイルを作る</h2>
+<ol><li>「Google Auth Platform」→「クライアント」→「クライアントを作成」を開きます。</li>
+<li>アプリケーションの種類は<strong>デスクトップアプリ</strong>、名前は<strong>Tomeris Windows</strong>などにします。Webアプリやサービスアカウントは選びません。</li>
+<li>作成後、クライアントの<strong>JSONをダウンロード</strong>します。ファイルをチャットに貼る必要はありません。ログイン用パスワードもトメリスには入力しません。</li></ol>
+<h2>4. トメリスでアカウントを追加する</h2>
+<ol><li>トメリスの「Googleカレンダー」を開きます。</li>
+<li>「設定JSONを選ぶ」で、手順3でダウンロードしたJSONを選びます。</li>
+<li>「アカウントを追加／再接続」を押します。既定のブラウザーでGoogleのログイン画面が開きます。</li>
+<li>接続するアカウントを選び、アプリ名・自分のプロジェクト・読み取り権限を確認して許可します。権限を一部だけ許可すると、アプリは接続を保存せず不足を表示します。</li>
+<li>ブラウザーに「トメリスに戻ってください」と表示されたら、アプリに戻ります。</li>
+<li>2つ目以降は「アカウントを追加／再接続」をもう一度押して、別のアカウントを選びます。</li>
+<li>一覧で「すべてのアカウント」または1つのアカウントを選び、「今日の予定を取得」を押します。</li></ol>
+<h2>確認すること</h2>
+<ul><li>日本時間の今日について、Google上で表示対象にしているカレンダーの予定を表示します。アカウントとカレンダー名を併記します。共有予定が複数アカウントにある場合は重複して表示します。</li>
+<li>未確認アプリの表示が出る場合、今回自分で作ったプロジェクトか確認してください。会社・学校のアカウントは管理者の許可が必要な場合があります。</li>
+<li>外部・テスト状態のカレンダー接続は、Googleの仕様で通常7日後に再接続が必要です。その場合「アカウントを追加／再接続」で同じアカウントを選びます。</li>
+<li>「登録を削除」はこのアプリ内の接続情報を削除します。Google側の許可も取り消す場合は、<a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>でトメリスの接続を削除してください。</li>
+<li>接続情報はこのWindowsユーザー向けに暗号化されます。別PC・別Windowsユーザーへコピーしても、そのまま接続情報を使うことはできません。元のダウンロードJSONは暗号化されないため、共有フォルダーやチャットに置かないでください。</li>
+<li>認証画面を閉じた場合は、アプリの「処理を中止」を押せます。接続待ちは最大3分です。通信の中止には最大20秒程度かかる場合があります。</li></ul>
+<h2>Google公式の説明</h2>
+<p><a href="https://developers.google.com/workspace/calendar/api/quickstart/python">Calendar APIの初回設定</a> · <a href="https://developers.google.com/workspace/guides/configure-oauth-consent">接続許可とテストユーザー</a> · <a href="https://developers.google.com/identity/protocols/oauth2/native-app">Windowsアプリの認証方式</a> · <a href="https://developers.google.com/identity/protocols/oauth2#expiration">認証の有効期限</a></p>
+<small>トメリス v0.10 / 2026-10-25作成。Google側の画面表記は変更される場合があります。</small></main></html>

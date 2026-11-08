@@ -1,0 +1,236 @@
+{
+  "suite": "tomeris_behavior_v1",
+  "created_at": "2026-11-04T20:31:05.546535+00:00",
+  "app_module": "tomeris_desktop_v073",
+  "app_sha256": "4137443b98717072f963358b1035b7308407152f17bf9be02eb0daad495b8ba8",
+  "cases": [
+    {
+      "id": "calc_decimal",
+      "category": "数値計算",
+      "turns": [
+        "計算: 0.1+0.2"
+      ],
+      "required": [
+        "結果：0.3"
+      ],
+      "forbidden": [],
+      "status": "passed",
+      "answers": [
+        "計算式：0.1+0.2\n結果：0.3\n計算処理で求めました。AIによる推測ではありません。"
+      ],
+      "error": null,
+      "seconds": 0.029
+    },
+    {
+      "id": "calc_precedence",
+      "category": "数値計算",
+      "turns": [
+        "計算: 2+3*4"
+      ],
+      "required": [
+        "結果：14"
+      ],
+      "forbidden": [],
+      "status": "passed",
+      "answers": [
+        "計算式：2+3*4\n結果：14\n計算処理で求めました。AIによる推測ではありません。"
+      ],
+      "error": null,
+      "seconds": 0.0135
+    },
+    {
+      "id": "calc_zero",
+      "category": "数値計算",
+      "turns": [
+        "計算: 1/0"
+      ],
+      "required": [
+        "0では割れません"
+      ],
+      "forbidden": [
+        "結果："
+      ],
+      "status": "passed",
+      "answers": [
+        "計算できませんでした：0では割れません。"
+      ],
+      "error": null,
+      "seconds": 0.0095
+    },
+    {
+      "id": "schedule_absent",
+      "category": "事実と未確認",
+      "turns": [
+        "今日の予定は？"
+      ],
+      "required": [
+        "計画はありません"
+      ],
+      "forbidden": [
+        "朝の運動",
+        "午後の読書"
+      ],
+      "status": "passed",
+      "answers": [
+        "トメリスに保存された2026-11-05の計画はありません。\nGoogleカレンダーなど、外部の予定は確認していません。"
+      ],
+      "error": null,
+      "seconds": 0.0086
+    },
+    {
+      "id": "source_absent",
+      "category": "出典",
+      "turns": [
+        "その出典は？"
+      ],
+      "required": [
+        "出典は確認できません"
+      ],
+      "forbidden": [
+        "https://"
+      ],
+      "status": "passed",
+      "answers": [
+        "直前の調査で本文を取得した出典は確認できません。調べたい内容を指定してください。出典を推測して補いません。"
+      ],
+      "error": null,
+      "seconds": 0.0101
+    },
+    {
+      "id": "weather_place",
+      "category": "不足情報",
+      "turns": [
+        "明後日の天気は？"
+      ],
+      "required": [
+        "市区町村"
+      ],
+      "forbidden": [
+        "最高気温："
+      ],
+      "status": "passed",
+      "answers": [
+        "どの市区町村の天気を調べますか？「平塚市」「東京都荒川区」のように地域名で答えてください。天気サービスへ地域名と、その代表地点の座標だけを送ります。"
+      ],
+      "error": null,
+      "seconds": 0.0123
+    },
+    {
+      "id": "weather_day_followup",
+      "category": "会話文脈",
+      "turns": [
+        "明日の天気は？",
+        "明後日は？"
+      ],
+      "required": [
+        "明後日",
+        "市区町村"
+      ],
+      "forbidden": [
+        "今日の予報"
+      ],
+      "status": "passed",
+      "answers": [
+        "どの市区町村の天気を調べますか？「平塚市」「東京都荒川区」のように地域名で答えてください。天気サービスへ地域名と、その代表地点の座標だけを送ります。",
+        "明後日の天気を調べる市区町村を入力してください。以前の地域を現在地として推測しません。"
+      ],
+      "error": null,
+      "seconds": 0.0108
+    },
+    {
+      "id": "search_to_calc",
+      "category": "話題の切替",
+      "turns": [
+        "Googleで調べて",
+        "計算: 5*6"
+      ],
+      "required": [
+        "結果：30"
+      ],
+      "forbidden": [
+        "検索画面を"
+      ],
+      "status": "passed",
+      "answers": [
+        "指定方法：Google。何を調べますか？次の入力をこの方法で調べます。取り消す場合は「キャンセル」と入力してください。",
+        "計算式：5*6\n結果：30\n計算処理で求めました。AIによる推測ではありません。"
+      ],
+      "error": null,
+      "seconds": 0.0132
+    },
+    {
+      "id": "cancel_source",
+      "category": "文脈の解除",
+      "turns": [
+        "キャンセル",
+        "その出典は？"
+      ],
+      "required": [
+        "出典は確認できません"
+      ],
+      "forbidden": [
+        "https://"
+      ],
+      "status": "passed",
+      "answers": [
+        "確認待ちと調査の引き継ぎを取り消しました。新しい質問を入力してください。",
+        "直前の調査で本文を取得した出典は確認できません。調べたい内容を指定してください。出典を推測して補いません。"
+      ],
+      "error": null,
+      "seconds": 0.0078
+    },
+    {
+      "id": "past_empty",
+      "category": "過去と現在",
+      "turns": [
+        "2000年1月1日の予定は？"
+      ],
+      "required": [
+        "2000-01-01",
+        "計画はありません"
+      ],
+      "forbidden": [
+        "今日の計画（"
+      ],
+      "status": "passed",
+      "answers": [
+        "トメリスに保存された2000-01-01の計画はありません。\nGoogleカレンダーなど、外部の予定は確認していません。"
+      ],
+      "error": null,
+      "seconds": 0.0093
+    }
+  ],
+  "model_cases": [
+    {
+      "id": "analysis_missing_data",
+      "question": "売上が下がった。広告費を倍にすべき？",
+      "criteria": [
+        "減少原因を決めつけない",
+        "期間・売上・費用など必要な情報を挙げる",
+        "追加情報なしに倍増が最適と断定しない"
+      ],
+      "status": "not_evaluated"
+    },
+    {
+      "id": "analysis_causation",
+      "question": "新しい手順にしたらミスが減った。この手順のおかげと断定できる？",
+      "criteria": [
+        "相関と因果を区別する",
+        "件数や作業量など他の変化を確認する",
+        "断定を避け検証方法を提案する"
+      ],
+      "status": "not_evaluated"
+    },
+    {
+      "id": "conversation_humor",
+      "question": "少し休憩して雑談しよう。",
+      "criteria": [
+        "自然で簡潔に返す",
+        "冗談がなくても合格",
+        "過剰な称賛・能力の誇張・不自然な決めぜりふを避ける"
+      ],
+      "status": "not_evaluated"
+    }
+  ],
+  "limits": "固定のオフライン動作検査。実検索の品質・モデルの理解力・学習効果は測定していません。時間はテスト処理時間です。"
+}

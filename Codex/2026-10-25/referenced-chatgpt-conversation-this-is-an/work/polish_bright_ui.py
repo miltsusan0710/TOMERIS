@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('outputs/tomeris_desktop_v025.py');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("style.map('TButton',","style.configure('TButton',borderwidth=1,relief='flat')\n        style.map('TCombobox',fieldbackground=[('readonly','#ffffff'),('disabled','#edf3f6')],background=[('readonly','#e5eff4')])\n        style.map('TButton',",1)
+s=s.replace("options=tk.Frame(main,bg='#edf5f8');options.grid", "options=tk.Frame(main,bg='#edf5f8');self.options_frame=options;options.grid")
+s=s.replace("spacing1=4,spacing3=14)","spacing1=2,spacing3=5)")
+s=s.replace('spacing1=3,spacing2=4,spacing3=14','spacing1=2,spacing2=4,spacing3=5').replace('spacing1=3,spacing2=4,spacing3=18','spacing1=2,spacing2=4,spacing3=5')
+s=s.replace("        self.second_box.configure(state='readonly' if active and self.mode.get()=='2モデル比較' else 'disabled')","        self.second_box.configure(state='readonly' if active and self.mode.get()=='2モデル比較' else 'disabled')\n        if self.mode.get()=='2モデル比較':\n            self.second_box.grid();self.options_frame.columnconfigure(2,weight=1,uniform='options')\n        else:\n            self.second_box.grid_remove();self.options_frame.columnconfigure(2,weight=0,uniform='')")
+p.write_text(s,encoding='utf-8')
+p=Path('work/check_bright_ui.py');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("            app.append('あなた'", "            app.transcript.configure(state='normal');app.transcript.delete('1.0','end');app.transcript.configure(state='disabled')\n            app.append('あなた'",1)
+s=s.replace('app.model_box,app.second_box,app.status_label','app.model_box,app.status_label')
+s=s.replace("            app.entry.insert('1.0','計算: 0.1+0.2')", "            app.mode.set('2モデル比較');app.control_state();root.update();assert app.second_box.winfo_ismapped()\n            app.mode.set('会話＋自動検索');app.control_state();root.update();assert not app.second_box.winfo_ismapped()\n            app.entry.insert('1.0','計算: 0.1+0.2')")
+p.write_text(s,encoding='utf-8')

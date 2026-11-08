@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "created_at": "2026-10-25T18:54:27+09:00",
+  "conversations": [
+    {
+      "timestamp": "2026-10-25T19:05:20+09:00",
+      "user": "helo",
+      "tomeris": "これは画面確認用の応答です。実際のモデルには接続していません。"
+    }
+  ],
+  "growth_log": [],
+  "memories": [],
+  "decisions": [],
+  "metadata": {
+    "memory_engine": "0.4.1",
+    "next_memory_id": 1
+  }
+}

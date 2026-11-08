@@ -1,0 +1,11 @@
+from pathlib import Path
+root=Path('outputs')
+s=(root/'tomeris_desktop_v018.py').read_text(encoding='utf-8-sig').replace('v0.18','v0.19')
+s=s.replace('from tomeris_history_search import DesktopService as PlanService','from tomeris_settings import DesktopService as PlanService, choose_startup_model')
+s=s.replace('        self.models=[]','        self.models=[]\n        self.startup_choice_pending=True')
+s=s.replace("        menu.add_cascade(label='データ',menu=self.data_menu)", "        self.data_menu.add_command(label='選択中の会話モデルを起動設定に保存',command=self.save_model_setting)\n        menu.add_cascade(label='データ',menu=self.data_menu)")
+s=s.replace("        for control in self.controls:", "        self.data_menu.entryconfigure(2,state='normal' if active and self.model.get() in self.models else 'disabled')\n        for control in self.controls:",1)
+s=s.replace('    def restore_dialog(self):', "    def save_model_setting(self):\n        if self.busy or self.closing: return\n        model=self.model.get()\n        self.submit('reply',lambda:self.service.save_startup_model(model),'起動時のモデル設定を保存しています…')\n    def restore_dialog(self):")
+s=s.replace("                    if value.imported:", "                    if value.settings_notice:\n                        self.append('お知らせ',value.settings_notice)\n                    if value.imported:")
+s=s.replace("                        self.model_box.configure(values=value); self.second_box.configure(values=value)", "                        self.model_box.configure(values=value); self.second_box.configure(values=value)\n                        if self.startup_choice_pending and value:\n                            selected,notice=choose_startup_model(self.service.startup_model,value,self.model.get())\n                            self.model.set(selected); self.startup_choice_pending=False\n                            if notice: self.append('お知らせ',notice)")
+(root/'tomeris_desktop_v019.py').write_text(s,encoding='utf-8')

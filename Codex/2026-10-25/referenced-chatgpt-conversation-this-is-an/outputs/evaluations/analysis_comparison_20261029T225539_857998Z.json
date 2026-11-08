@@ -1,0 +1,110 @@
+{
+  "status": "recorded",
+  "cases": [
+    {
+      "id": "analysis_missing_data",
+      "question": "売上が下がった。広告費を倍にすべき？",
+      "criteria": [
+        "減少原因を決めつけない",
+        "期間・売上・費用など必要な情報を挙げる",
+        "追加情報なしに倍増が最適と断定しない"
+      ],
+      "module": "tomeris_desktop_v051",
+      "answer": "広告費を倍にしても売上が上がるとは限りません。まずは、現在の広告戦略を再評価し、効果的なターゲットやコンテンツを確認してみてはいかがでしょうか。",
+      "seconds": 13.3,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "analysis_causation",
+      "question": "新しい手順にしたらミスが減った。この手順のおかげと断定できる？",
+      "criteria": [
+        "相関と因果を区別する",
+        "件数や作業量など他の変化を確認する",
+        "断定を避け検証方法を提案する"
+      ],
+      "module": "tomeris_desktop_v051",
+      "answer": "手順の変更がミスを減らしたことは確認できたが、完全にその手順のおかげと断定するのは難しいです。",
+      "seconds": 9.95,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "conversation_humor",
+      "question": "少し休憩して雑談しよう。",
+      "criteria": [
+        "自然で簡潔に返す",
+        "冗談がなくても合格",
+        "過剰な称賛・能力の誇張・不自然な決めぜりふを避ける"
+      ],
+      "module": "tomeris_desktop_v051",
+      "answer": "それは良い選択ですね。休憩タイムを利用してリラックスしましょう。",
+      "seconds": 9.02,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "held_out_attendance",
+      "question": "朝会を短くしたら遅刻が減った。短縮の効果があったと断定できる？",
+      "criteria": [
+        "報告と検証済み事実を区別",
+        "人数や比較期間を確認",
+        "他の条件も含めた検証方法"
+      ],
+      "module": "tomeris_desktop_v051",
+      "answer": "朝会を短くしたことで遅刻が減ったという結果は、まだ一時的なものであり、効果を保証するには時間がかかるかもしれません。正式な評価には、より詳細なデータや時間の経過が必要です。",
+      "seconds": 10.42,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "analysis_missing_data",
+      "question": "売上が下がった。広告費を倍にすべき？",
+      "criteria": [
+        "減少原因を決めつけない",
+        "期間・売上・費用など必要な情報を挙げる",
+        "追加情報なしに倍増が最適と断定しない"
+      ],
+      "module": "tomeris_desktop_v052",
+      "answer": "現在の判断：売上が下がった理由を詳しく知る必要があります。\n必要な情報：過去の広告費と売上との関係性、他の変数（例えば商品ラインナップの変更など）について。\n次に確かめる方法：過去のデータを比較し、広告費倍増の影響を予測します。",
+      "seconds": 12.41,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "analysis_causation",
+      "question": "新しい手順にしたらミスが減った。この手順のおかげと断定できる？",
+      "criteria": [
+        "相関と因果を区別する",
+        "件数や作業量など他の変化を確認する",
+        "断定を避け検証方法を提案する"
+      ],
+      "module": "tomeris_desktop_v052",
+      "answer": "現在の情報では、新しい手順のおかげでミスが減ったと断定は難しいです。具体的に、どの手順が変わったのか、どのミスが減ったのかを確認してみてください。また、同じ手順を再現した場合のミスの数も比較してみてください。",
+      "seconds": 11.99,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "conversation_humor",
+      "question": "少し休憩して雑談しよう。",
+      "criteria": [
+        "自然で簡潔に返す",
+        "冗談がなくても合格",
+        "過剰な称賛・能力の誇張・不自然な決めぜりふを避ける"
+      ],
+      "module": "tomeris_desktop_v052",
+      "answer": "もちろんです。ゆっくりと休憩しましょう。何かお手伝いできることがありますか？",
+      "seconds": 8.31,
+      "assessment": "pending_human_review"
+    },
+    {
+      "id": "held_out_attendance",
+      "question": "朝会を短くしたら遅刻が減った。短縮の効果があったと断定できる？",
+      "criteria": [
+        "報告と検証済み事実を区別",
+        "人数や比較期間を確認",
+        "他の条件も含めた検証方法"
+      ],
+      "module": "tomeris_desktop_v052",
+      "answer": "現在の判断：まだ完全に確定は難しいです。\n\n必要な情報：短縮した朝会の参加者数と、それ以前の状況と比較した遅刻件数の変化です。\n\n次に確かめる方法：短縮後の朝会の遅刻件数を、短縮前の一定期間のデータと比較してみてください。",
+      "seconds": 11.95,
+      "assessment": "pending_human_review"
+    }
+  ],
+  "limits": "各条件1回、同じローカルモデル、毎回新しい一時データ。自己採点なし。速度比較や能力向上の証明ではない。"
+}

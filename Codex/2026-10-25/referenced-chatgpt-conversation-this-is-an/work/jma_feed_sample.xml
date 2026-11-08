@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" lang="ja">
+  <title>高頻度（地震火山）</title>
+  <subtitle>JMAXML publishing feed</subtitle>
+  <updated>2026-10-29T00:09:40+09:00</updated>
+  <id>https://www.data.jma.go.jp/developer/xml/feed/eqvol.xml#short_1793200180</id>
+  <link rel="related" href="https://www.jma.go.jp/"/>
+  <link rel="self" href="https://www.data.jma.go.jp/developer/xml/feed/eqvol.xml"/>
+  <link rel="hub" href="http://alert-hub.appspot.com/"/>
+  <rights type="html"><![CDATA[
+<a href="https://www.jma.go.jp/jma/kishou/info/coment.html">利用規約</a>,
+<a href="https://www.jma.go.jp/jma/en/copyright.html">Terms of Use</a>
+]]></rights>
+  <entry>
+    <title>震度速報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028150929_0_VXSE51_010000.xml</id>
+    <updated>2026-10-28T15:09:28Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028150929_0_VXSE51_010000.xml"/>
+    <content type="text">【震度速報】２９日００時０７分ころ、地震による強い揺れを感じました。震度３以上が観測された地域をお知らせします。</content>
+  </entry>
+  <entry>
+    <title>震源・震度に関する情報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028145729_0_VXSE53_270000.xml</id>
+    <updated>2026-10-28T14:57:29Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028145729_0_VXSE53_270000.xml"/>
+    <content type="text">【震源・震度情報】２８日２３時５４分ころ、地震がありました。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140042_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140042_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　薩摩硫黄島　降灰予報（定時）】　現在、薩摩硫黄島は噴火警戒レベル２（火口周辺規制）です。薩摩硫黄島で噴火が発生した場合には、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140045_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140045_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　諏訪之瀬島　降灰予報（定時）】　現在、諏訪之瀬島は噴火警戒レベル２（火口周辺規制）です。諏訪之瀬島で噴火が発生した場合には、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140048_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140048_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　霧島山（新燃岳）　降灰予報（定時）】　現在、霧島山（新燃岳）は噴火警戒レベル２（火口周辺規制）です。霧島山（新燃岳）で噴火が発生した場合には、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140030_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140030_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　雌阿寒岳　降灰予報（定時）】　現在、雌阿寒岳は噴火警戒レベル２（火口周辺規制）です。雌阿寒岳で噴火が発生した場合には、２９日０９時から１２時までは火口から東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140033_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140033_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　阿蘇山　降灰予報（定時）】　現在、阿蘇山は噴火警戒レベル２（火口周辺規制）です。阿蘇山で噴火が発生した場合には、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028140038_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T14:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028140038_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　桜島　降灰予報（定時）】　現在、桜島は噴火警戒レベル３（入山規制）です。桜島で噴火が発生した場合には、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110037_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110037_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　桜島　降灰予報（定時）】　現在、桜島は噴火警戒レベル３（入山規制）です。桜島で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110041_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110041_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　薩摩硫黄島　降灰予報（定時）】　現在、薩摩硫黄島は噴火警戒レベル２（火口周辺規制）です。薩摩硫黄島で噴火が発生した場合には、２８日２１時から２４時までは火口から西方向、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110045_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110045_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　諏訪之瀬島　降灰予報（定時）】　現在、諏訪之瀬島は噴火警戒レベル２（火口周辺規制）です。諏訪之瀬島で噴火が発生した場合には、２８日２１時から２４時までは火口から西方向、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110048_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110048_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　霧島山（新燃岳）　降灰予報（定時）】　現在、霧島山（新燃岳）は噴火警戒レベル２（火口周辺規制）です。霧島山（新燃岳）で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110030_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110030_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　雌阿寒岳　降灰予報（定時）】　現在、雌阿寒岳は噴火警戒レベル２（火口周辺規制）です。雌阿寒岳で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028110033_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T11:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028110033_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　阿蘇山　降灰予報（定時）】　現在、阿蘇山は噴火警戒レベル２（火口周辺規制）です。阿蘇山で噴火が発生した場合には、２８日２１時から２４時までは火口から北西方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>震源・震度に関する情報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028082027_0_VXSE53_270000.xml</id>
+    <updated>2026-10-28T08:20:27Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028082027_0_VXSE53_270000.xml"/>
+    <content type="text">【震源・震度情報】２８日１７時１７分ころ、地震がありました。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080030_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080030_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　雌阿寒岳　降灰予報（定時）】　現在、雌阿寒岳は噴火警戒レベル２（火口周辺規制）です。雌阿寒岳で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080034_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080034_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　阿蘇山　降灰予報（定時）】　現在、阿蘇山は噴火警戒レベル２（火口周辺規制）です。阿蘇山で噴火が発生した場合には、２８日２１時から２４時までは火口から北方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080038_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080038_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　桜島　降灰予報（定時）】　現在、桜島は噴火警戒レベル３（入山規制）です。桜島で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080042_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080042_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　薩摩硫黄島　降灰予報（定時）】　現在、薩摩硫黄島は噴火警戒レベル２（火口周辺規制）です。薩摩硫黄島で噴火が発生した場合には、２８日２１時から２４時までは火口から西方向、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080045_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080045_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　諏訪之瀬島　降灰予報（定時）】　現在、諏訪之瀬島は噴火警戒レベル２（火口周辺規制）です。諏訪之瀬島で噴火が発生した場合には、２８日２１時から２４時までは火口から西方向、２９日０９時から１２時までは火口から北西方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>降灰予報（定時）</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028080048_0_VFVO53_010000.xml</id>
+    <updated>2026-10-28T08:00:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028080048_0_VFVO53_010000.xml"/>
+    <content type="text">【火山名　霧島山（新燃岳）　降灰予報（定時）】　現在、霧島山（新燃岳）は噴火警戒レベル２（火口周辺規制）です。霧島山（新燃岳）で噴火が発生した場合には、２８日２１時から２４時までは火口から南東方向、２９日０９時から１２時までは火口から北東方向に降灰が予想されます。</content>
+  </entry>
+  <entry>
+    <title>推定噴煙流向報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028055507_0_VFVO60_010000.xml</id>
+    <updated>2026-10-28T05:55:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028055507_0_VFVO60_010000.xml"/>
+    <content type="text">【桜島　推定噴煙流向報】</content>
+  </entry>
+  <entry>
+    <title>噴火に関する火山観測報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028055434_0_VFVO52_400000.xml</id>
+    <updated>2026-10-28T05:54:34Z</updated>
+    <author>
+      <name>福岡管区気象台　鹿児島地方気象台</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028055434_0_VFVO52_400000.xml"/>
+    <content type="text">【火山名　桜島　噴火に関する火山観測報】火　　山：桜島
+日　　時：2026年10月28日14時46分(280546UTC)
+現　　象：噴火</content>
+  </entry>
+  <entry>
+    <title>震源・震度に関する情報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028053150_0_VXSE53_270000.xml</id>
+    <updated>2026-10-28T05:31:50Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028053150_0_VXSE53_270000.xml"/>
+    <content type="text">【震源・震度情報】２８日１４時２８分ころ、地震がありました。</content>
+  </entry>
+  <entry>
+    <title>噴火に関する火山観測報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028052103_0_VFVO52_400000.xml</id>
+    <updated>2026-10-28T05:21:03Z</updated>
+    <author>
+      <name>福岡管区気象台　鹿児島地方気象台</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028052103_0_VFVO52_400000.xml"/>
+    <content type="text">【火山名　薩摩硫黄島　噴火に関する火山観測報】火　　山：薩摩硫黄島
+日　　時：2026年10月28日14時15分(280515UTC)
+現　　象：噴火</content>
+  </entry>
+  <entry>
+    <title>推定噴煙流向報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028052137_0_VFVO60_010000.xml</id>
+    <updated>2026-10-28T05:21:00Z</updated>
+    <author>
+      <name>気象庁</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028052137_0_VFVO60_010000.xml"/>
+    <content type="text">【薩摩硫黄島　推定噴煙流向報】</content>
+  </entry>
+  <entry>
+    <title>火山の状況に関する解説情報</title>
+    <id>https://www.data.jma.go.jp/developer/xml/data/20261028051515_0_VFVO51_400000.xml</id>
+    <updated>2026-10-28T05:15:15Z</updated>
+    <author>
+      <name>福岡管区気象台　鹿児島地方気象台</name>
+    </author>
+    <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20261028051515_0_VFVO51_400000.xml"/>
+    <content type="text">【火山名  薩摩硫黄島  火山の状況に関する解説情報】＜火口周辺警報（噴火警戒レベル２、火口周辺規制）が継続＞
+　薩摩硫黄島の硫黄岳火口で、本日（２８日）１３時０７分に噴火が発生しました。硫黄岳火口中心から概ね０．５ｋｍの範囲では、噴火に伴う弾道を描いて飛散する大きな噴石に警戒してください。</content>
+  </entry>
+</feed>

@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "mode": "offline_labelled_fixtures",
+  "created_at": "2026-10-28T23:21:35.430501+00:00",
+  "cases": [
+    {
+      "scenario": "検索が正常",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 15.775,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 9.805,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      }
+    },
+    {
+      "scenario": "検索候補が空・既知の出典は取得可能",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.648,
+        "requested_urls": [],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 7.229,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      }
+    },
+    {
+      "scenario": "無関係な候補・既知の出典は取得可能",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.736,
+        "requested_urls": [
+          "https://example.net/unrelated"
+        ],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 2,
+        "successful_fetches": 2,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 8.933,
+        "requested_urls": [
+          "https://example.com/ollama",
+          "https://example.net/unrelated"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      }
+    },
+    {
+      "scenario": "保存出典も取得失敗",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.33,
+        "requested_urls": [],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 1,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.507,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": []
+      }
+    },
+    {
+      "scenario": "無関係な保存資料",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.558,
+        "requested_urls": [],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 2.304,
+        "requested_urls": [],
+        "displayed_urls": []
+      }
+    },
+    {
+      "scenario": "最新情報に保存資料を使わない",
+      "question": "今のOllamaニュースを調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 2.195,
+        "requested_urls": [],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.258,
+        "requested_urls": [],
+        "displayed_urls": []
+      }
+    },
+    {
+      "scenario": "同じ出典の重複",
+      "question": "Ollamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 3.793,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 1,
+        "successful_fetches": 1,
+        "relevant_sources": 1,
+        "unique_sources": 1,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 12.941,
+        "requested_urls": [
+          "https://example.com/ollama"
+        ],
+        "displayed_urls": [
+          "https://example.com/ollama"
+        ]
+      }
+    },
+    {
+      "scenario": "明示したWikipedia指定を保持",
+      "question": "WikipediaでOllamaについて調べて",
+      "without_learning": {
+        "enabled": false,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 2.711,
+        "requested_urls": [],
+        "displayed_urls": []
+      },
+      "with_learning": {
+        "enabled": true,
+        "page_requests": 0,
+        "successful_fetches": 0,
+        "relevant_sources": 0,
+        "unique_sources": 0,
+        "duplicate_sources": 0,
+        "cached_text_reused": false,
+        "elapsed_ms": 1.491,
+        "requested_urls": [],
+        "displayed_urls": []
+      }
+    }
+  ]
+}

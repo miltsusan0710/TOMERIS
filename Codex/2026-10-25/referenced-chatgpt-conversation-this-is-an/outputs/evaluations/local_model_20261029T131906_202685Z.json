@@ -1,0 +1,9 @@
+{
+  "app_module": "tomeris_desktop_v050",
+  "created_at": "2026-10-29T13:19:06.202685+00:00",
+  "model": "qwen2.5:3b",
+  "status": "incomplete",
+  "cases": [],
+  "limits": "一回のローカルモデル出力の記録。比較対象なし。自己採点なし。能力向上の証明ではない。固定質問だけをlocalhostのOllamaへ送信。本番記憶・計画は使用しない。",
+  "error": "Ollamaの通信または応答形式を確認してください。"
+}

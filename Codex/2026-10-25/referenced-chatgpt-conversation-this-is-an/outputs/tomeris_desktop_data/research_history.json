@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "5f4138af64a34dd3975289b22e015054",
+      "question": "アイアンマンについて調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "アイアンマン",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%9E%E3%83%B3"
+        },
+        {
+          "title": "アイアンマン (2010年のアニメ)",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%9E%E3%83%B3_(2010%E5%B9%B4%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1)"
+        }
+      ],
+      "retrieved_at": "2026-10-30T04:01:11.330250+00:00"
+    },
+    {
+      "id": "10f1468875984d37a9e5ce5364fe820f",
+      "question": "桝太一について調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "桝太一",
+          "url": "https://ja.wikipedia.org/wiki/%E6%A1%9D%E5%A4%AA%E4%B8%80"
+        },
+        {
+          "title": "真相報道 バンキシャ!",
+          "url": "https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%9B%B8%E5%A0%B1%E9%81%93_%E3%83%90%E3%83%B3%E3%82%AD%E3%82%B7%E3%83%A3!"
+        }
+      ],
+      "retrieved_at": "2026-10-30T04:07:19.493494+00:00"
+    },
+    {
+      "id": "ba39b13165eb4f979ac6a8a3870fe68f",
+      "question": "アイアンマンについて調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "アイアンマン",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%9E%E3%83%B3"
+        }
+      ],
+      "retrieved_at": "2026-10-31T15:05:11.150221+00:00"
+    },
+    {
+      "id": "77d3504d0602431f899ec52bb60f5c8e",
+      "question": "校長について調べて",
+      "method": "選択設定：Wikipedia（人物名一致・冒頭紹介）",
+      "sources": [
+        {
+          "title": "校長",
+          "url": "https://ja.wikipedia.org/wiki/%E6%A0%A1%E9%95%B7"
+        }
+      ],
+      "retrieved_at": "2026-11-05T08:05:50.703233+00:00"
+    },
+    {
+      "id": "9f4cc787e81e46a5b5748b5268e69cdf",
+      "question": "東京都立本所高等学校について調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "東京都立本所高等学校",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E6%9C%AC%E6%89%80%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1"
+        }
+      ],
+      "retrieved_at": "2026-11-05T15:43:33.283354+00:00"
+    },
+    {
+      "id": "6b844e7ec6be4fbe9cb806889762d50b",
+      "question": "物理について調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "物理学",
+          "url": "https://ja.wikipedia.org/wiki/%E7%89%A9%E7%90%86%E5%AD%A6"
+        },
+        {
+          "title": "天体物理学",
+          "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E4%BD%93%E7%89%A9%E7%90%86%E5%AD%A6"
+        }
+      ],
+      "retrieved_at": "2026-11-06T01:40:49.347104+00:00"
+    },
+    {
+      "id": "8b49362bcb2a4bcead37dd8e28e663af",
+      "question": "東海大学について調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "東海大学",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E5%A4%A7%E5%AD%A6"
+        }
+      ],
+      "retrieved_at": "2026-11-06T04:56:32.270171+00:00"
+    },
+    {
+      "id": "6a1a007e524142c2a9765920da41e135",
+      "question": "東京大学について調べて",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "東京大学",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6"
+        }
+      ],
+      "retrieved_at": "2026-11-06T04:57:04.276296+00:00"
+    },
+    {
+      "id": "893a7040f5f044a08123f70e670d280a",
+      "question": "あらゆる資料を調べて。",
+      "method": "選択設定：自動（実際の提供元は出典を参照）",
+      "sources": [
+        {
+          "title": "一次資料",
+          "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E8%B3%87%E6%96%99"
+        },
+        {
+          "title": "博物館",
+          "url": "https://ja.wikipedia.org/wiki/%E5%8D%9A%E7%89%A9%E9%A4%A8"
+        }
+      ],
+      "retrieved_at": "2026-11-06T09:37:49.696380+00:00"
+    }
+  ]
+}

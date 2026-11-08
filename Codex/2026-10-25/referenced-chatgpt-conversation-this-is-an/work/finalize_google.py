@@ -1,0 +1,12 @@
+from pathlib import Path
+p=Path('outputs/tomeris_google.py')
+s=p.read_text(encoding='utf-8-sig')
+s=s.replace("secrets.compare_digest(received[0],state)","secrets.compare_digest(received[0].encode('utf-8'),state.encode('utf-8'))")
+s=s.replace("def authorize(client,cancel,timeout=180):\n    state", "def authorize(client,cancel,timeout=180):\n    if cancel.is_set():\n        raise GoogleError('Google接続を中止しました。')\n    state")
+s=s.replace("        info=request_json(USERINFO,token=token['access_token'])", "        if self.cancel.is_set():\n            raise GoogleError('Google接続を中止しました。')\n        info=request_json(USERINFO,token=token['access_token'])")
+s=s.replace("        url=CALENDAR+path+'?'+urlencode(params)", "        if self.cancel.is_set():\n            raise GoogleError('予定の取得を中止しました。')\n        url=CALENDAR+path+'?'+urlencode(params)")
+s=s.replace("            refresh()\n            return request_json", "            refresh()\n            if self.cancel.is_set():\n                raise GoogleError('予定の取得を中止しました。')\n            return request_json")
+p.write_text(s,encoding='utf-8')
+p=Path('outputs/test_google_calendar.py')
+s=p.read_text(encoding='utf-8-sig').replace("'/other?state=ok&code=x',", "'/other?state=ok&code=x','/oauth2callback?state=%E3%81%82&code=x',")
+p.write_text(s,encoding='utf-8')

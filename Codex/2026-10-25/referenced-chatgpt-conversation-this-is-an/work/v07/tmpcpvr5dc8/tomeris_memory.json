@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "created_at": "2026-10-27T18:36:33+09:00",
+  "conversations": [],
+  "growth_log": [],
+  "memories": [
+    {
+      "id": "M0001",
+      "timestamp": "2026-10-27T18:36:34+09:00",
+      "category": "目標",
+      "text": "Pythonを学ぶ",
+      "tags": [],
+      "importance": 3,
+      "source": "user_explicit"
+    }
+  ],
+  "decisions": [],
+  "metadata": {
+    "memory_engine": "0.4.1",
+    "next_memory_id": 2
+  }
+}

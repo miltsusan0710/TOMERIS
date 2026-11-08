@@ -1,0 +1,1237 @@
+{
+  "version": 1,
+  "policy": {
+    "overview": "exact_title_first",
+    "specific": "search_order"
+  },
+  "action_values": {
+    "overview": {
+      "search_order": 0.0,
+      "exact_title_first": 1.0
+    },
+    "specific": {
+      "search_order": 1.0,
+      "exact_title_first": -1.0
+    }
+  },
+  "train_counts": {
+    "overview": {
+      "search_order": 28,
+      "exact_title_first": 92
+    },
+    "specific": {
+      "search_order": 109,
+      "exact_title_first": 11
+    }
+  },
+  "training_log": [
+    {
+      "id": "train_overview_0",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_1",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_2",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_3",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_4",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_1",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_2",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_3",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_4",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_1",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_2",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_3",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_4",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_1",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_overview_0",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_1",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_2",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_3",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_4",
+      "action": "exact_title_first",
+      "reward": 1
+    },
+    {
+      "id": "train_overview_5",
+      "action": "search_order",
+      "reward": 0
+    },
+    {
+      "id": "train_specific_0",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_1",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_2",
+      "action": "exact_title_first",
+      "reward": -1
+    },
+    {
+      "id": "train_specific_3",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_4",
+      "action": "search_order",
+      "reward": 1
+    },
+    {
+      "id": "train_specific_5",
+      "action": "exact_title_first",
+      "reward": -1
+    }
+  ],
+  "test_count": 6,
+  "test_reward": 1.0,
+  "baseline_reward": 0.5,
+  "delta": 0.5,
+  "baseline": "実験用search_order固定。現行アプリの性能との比較ではありません。",
+  "synthetic": true,
+  "production_enabled": false,
+  "limitation": "オフラインの全行動報酬付き実験。実検索精度・会話能力の向上を示さず、通常起動へ自動適用しません。"
+}

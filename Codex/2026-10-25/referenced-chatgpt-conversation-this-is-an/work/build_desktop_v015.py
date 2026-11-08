@@ -1,0 +1,13 @@
+from pathlib import Path
+root=Path('outputs')
+s=(root/'tomeris_plan_history_ui_v014.py').read_text(encoding='utf-8-sig')
+s=s.replace('from tomeris_reflection_ui import ReflectionPanel','from tomeris_reflection_ui import ReflectionPanel\nfrom tomeris_weekly_ui import WeeklyPanel')
+s=s.replace("        self.reflect_button.grid(row=0,column=0,sticky='w')", "        self.reflect_button.grid(row=0,column=0,sticky='w')\n        self.weekly_button=ttk.Button(footer,text='7日間のまとめ',command=self.weekly)\n        self.weekly_button.grid(row=0,column=1,sticky='e')")
+s=s.replace('self.reflect_button]:','self.reflect_button,self.weekly_button]:')
+s=s.replace('    def reflect(self):',"    def weekly(self):\n        if not self.app.busy and not self.app.closing:\n            self.app.weekly_panel=WeeklyPanel(self)\n    def reflect(self):")
+(root/'tomeris_plan_history_ui_v015.py').write_text(s,encoding='utf-8')
+s=(root/'tomeris_desktop_v014.py').read_text(encoding='utf-8-sig').replace('v0.14','v0.15')
+s=s.replace('from tomeris_plan_reflection import DesktopService as PlanService','from tomeris_weekly import DesktopService as PlanService')
+s=s.replace('from tomeris_plan_history_ui_v014 import','from tomeris_plan_history_ui_v015 import')
+s=s.replace('    def open_google(self):', "        panel=getattr(self,'weekly_panel',None)\n        if panel is not None:\n            panel.state()\n    def open_google(self):")
+(root/'tomeris_desktop_v015.py').write_text(s,encoding='utf-8')

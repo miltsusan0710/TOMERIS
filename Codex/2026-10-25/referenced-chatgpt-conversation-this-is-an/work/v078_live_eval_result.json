@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "policy": [
+    "exact",
+    "normalized"
+  ],
+  "training_attempts": [],
+  "records": [
+    {
+      "topic": "情報検索",
+      "group": "retrieval",
+      "split": "train",
+      "checked_at": "2026-11-05T07:54:50.014821+00:00",
+      "pages": [],
+      "search_error": "通信できませんでした。接続状態を確認してください。",
+      "candidates": [],
+      "actions": [
+        "exact",
+        "normalized"
+      ],
+      "evidence_obtained": false,
+      "attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ]
+    },
+    {
+      "topic": "トニースターク",
+      "group": "ironman",
+      "split": "train",
+      "checked_at": "2026-11-05T07:54:50.073106+00:00",
+      "pages": [],
+      "search_error": "通信できませんでした。接続状態を確認してください。",
+      "candidates": [],
+      "actions": [
+        "exact",
+        "normalized"
+      ],
+      "evidence_obtained": false,
+      "attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ]
+    },
+    {
+      "topic": "統計学",
+      "group": "statistics",
+      "split": "test",
+      "checked_at": "2026-11-05T07:54:50.099465+00:00",
+      "pages": [],
+      "search_error": "通信できませんでした。接続状態を確認してください。",
+      "candidates": [],
+      "actions": [
+        "exact",
+        "normalized"
+      ],
+      "evidence_obtained": false,
+      "attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ],
+      "baseline_evidence_obtained": false,
+      "baseline_attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ]
+    },
+    {
+      "topic": "ロバートダウニージュニア",
+      "group": "actor",
+      "split": "test",
+      "checked_at": "2026-11-05T07:54:50.125944+00:00",
+      "pages": [],
+      "search_error": "通信できませんでした。接続状態を確認してください。",
+      "candidates": [],
+      "actions": [
+        "exact",
+        "normalized"
+      ],
+      "evidence_obtained": false,
+      "attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ],
+      "baseline_evidence_obtained": false,
+      "baseline_attempts": [
+        {
+          "action": "exact",
+          "success": false
+        },
+        {
+          "action": "normalized",
+          "success": false
+        }
+      ]
+    }
+  ],
+  "overlap_detected": false,
+  "comparison": {
+    "count": 2,
+    "evidence": 0,
+    "baseline_evidence": 0,
+    "method_attempts": 4,
+    "baseline_method_attempts": 4
+  },
+  "production_enabled": false,
+  "limitation": "本文・引用の取得可否と方法試行数のみ。正答率・通信回数・会話能力ではありません。同じ取得内容で初期順と経験順を比較し、評価側では経験を更新しません。重複資料があれば比較値を出しません。"
+}

@@ -1,0 +1,11 @@
+from pathlib import Path
+root=Path('outputs')
+s=(root/'tomeris_desktop_v016.py').read_text(encoding='utf-8-sig').replace('v0.16','v0.17')
+s=s.replace('from tomeris_backup import DesktopService as PlanService','from tomeris_restore import DesktopService as PlanService\nfrom tomeris_restore_ui import RestorePanel')
+s=s.replace("        self.root.geometry('1080x760')", "        self.alternate_data=Path(data_dir).resolve() if data_dir is not None and not demo else None\n        if self.alternate_data is not None:\n            self.root.title(self.root.title()+'（別データ）')\n        self.root.geometry('1080x760')")
+s=s.replace("        menu.add_cascade(label='データ',menu=self.data_menu)","        self.data_menu.add_command(label='バックアップを確認・別フォルダーに復元…',command=self.restore_dialog)\n        menu.add_cascade(label='データ',menu=self.data_menu)")
+s=s.replace("        self.data_menu.entryconfigure(0,state='normal' if active else 'disabled')", "        for index in (0,1):\n            self.data_menu.entryconfigure(index,state='normal' if active else 'disabled')")
+s=s.replace('    def backup(self):', "        panel=getattr(self,'restore_panel',None)\n        if panel is not None:\n            panel.state()\n    def restore_dialog(self):\n        if self.busy or self.closing: return\n        path=filedialog.askopenfilename(parent=self.root,title='トメリスのバックアップZIPを選ぶ',filetypes=[('ZIPファイル','*.zip')])\n        if path:\n            self.restore_panel=RestorePanel(self,path)\n    def backup(self):")
+s=s.replace("                    self.service=value; self.busy=False", "                    self.service=value; self.busy=False\n                    if self.alternate_data is not None:\n                        self.append('お知らせ','別データで起動しています。保存先：'+str(self.alternate_data))")
+s=s.replace('                        if not history_open and not today_open', "                        restore_open=getattr(self,'restore_panel',None) and self.restore_panel.window.winfo_exists()\n                        if not restore_open and not history_open and not today_open")
+(root/'tomeris_desktop_v017.py').write_text(s,encoding='utf-8')

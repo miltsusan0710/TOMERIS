@@ -1,0 +1,218 @@
+[
+  {
+    "id": "train_overview_0",
+    "topic_id": "train_overview_topic0",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_overview_1",
+    "topic_id": "train_overview_topic1",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_overview_2",
+    "topic_id": "train_overview_topic2",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_overview_3",
+    "topic_id": "train_overview_topic3",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_overview_4",
+    "topic_id": "train_overview_topic4",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_overview_5",
+    "topic_id": "train_overview_topic5",
+    "context": "overview",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "train_specific_0",
+    "topic_id": "train_specific_topic0",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "train_specific_1",
+    "topic_id": "train_specific_topic1",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "train_specific_2",
+    "topic_id": "train_specific_topic2",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "train_specific_3",
+    "topic_id": "train_specific_topic3",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "train_specific_4",
+    "topic_id": "train_specific_topic4",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "train_specific_5",
+    "topic_id": "train_specific_topic5",
+    "context": "specific",
+    "split": "train",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "test_overview_0",
+    "topic_id": "test_overview_topic0",
+    "context": "overview",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "test_overview_1",
+    "topic_id": "test_overview_topic1",
+    "context": "overview",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "test_overview_2",
+    "topic_id": "test_overview_topic2",
+    "context": "overview",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 0,
+      "exact_title_first": 1
+    }
+  },
+  {
+    "id": "test_specific_0",
+    "topic_id": "test_specific_topic0",
+    "context": "specific",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "test_specific_1",
+    "topic_id": "test_specific_topic1",
+    "context": "specific",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  },
+  {
+    "id": "test_specific_2",
+    "topic_id": "test_specific_topic2",
+    "context": "specific",
+    "split": "test",
+    "origin": "synthetic",
+    "reason": "人工報酬による選択学習の動作試験。実ページの評価ではありません。",
+    "rewards": {
+      "search_order": 1,
+      "exact_title_first": -1
+    }
+  }
+]

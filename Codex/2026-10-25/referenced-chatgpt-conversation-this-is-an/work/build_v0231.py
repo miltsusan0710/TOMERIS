@@ -1,0 +1,10 @@
+from pathlib import Path
+s=Path('outputs/tomeris_desktop_v023.py').read_text(encoding='utf-8-sig').replace('v0.23','v0.23.1')
+s=s.replace("self.mode=tk.StringVar(value='会話')","self.mode=tk.StringVar(value='会話＋自動検索')")
+s=s.replace('こんにちは。質問や相談を入力してください。左のボタンから記憶やPC情報も確認できます。','こんにちは。質問や相談を入力してください。天気・最新情報・「調べて」などの質問では自動でネット検索します。検索時は今回の質問をBingへ送ります。記憶や過去の会話は送りません。')
+Path('outputs/tomeris_desktop_v0231.py').write_text(s,encoding='utf-8')
+s=Path('work/check_search_ui.py').read_text(encoding='utf-8-sig').replace('tomeris_desktop_v023','tomeris_desktop_v0231')
+s=s.replace("app.mode.set('会話＋自動検索'); app.control_state()","assert app.mode.get()=='会話＋自動検索'")
+s=s.replace("        app.mode.set('ネット検索');", "        with patch.object(web,'search_web') as search:\n            app.entry.insert('1.0','最新のOllamaを調べて'); app.send(); wait(root,app)\n            assert '画面確認用の検索結果' in app.last_answer\n        app.mode.set('ネット検索');",1)
+s=s.replace("print('Search UI:","print('Default auto-search UI:")
+Path('work/check_auto_search_ui.py').write_text(s,encoding='utf-8')

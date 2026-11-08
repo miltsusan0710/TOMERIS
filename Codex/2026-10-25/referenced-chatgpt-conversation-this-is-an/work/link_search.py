@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path('outputs/tomeris_desktop_v023.py');s=p.read_text(encoding='utf-8-sig')
+s=s.replace('import argparse','import argparse\nimport re\nimport webbrowser\nfrom tomeris_web_search import public_url',1)
+s=s.replace("        self.transcript.insert('end',text+'\\n\\n','body')", "        body_start=self.transcript.index('end-1c')\n        self.transcript.insert('end',text+'\\n\\n','body')\n        for match in re.finditer(r'https?://[^\\s<>]+',text):\n            url=match.group(0)\n            if not public_url(url): continue\n            tag='url_'+str(len(self.transcript.tag_names()))\n            self.transcript.tag_add(tag,f'{body_start}+{match.start()}c',f'{body_start}+{match.end()}c')\n            self.transcript.tag_configure(tag,foreground='#006aaa',underline=True)\n            self.transcript.tag_bind(tag,'<Button-1>',lambda event,u=url:self.open_source(u))")
+s=s.replace('    def copy_answer(self):',"    def open_source(self,url):\n        if self.closing or not public_url(url): return\n        try:\n            if not webbrowser.open(url): self.status.set('ブラウザーを開けませんでした。URLをコピーして開いてください。')\n        except Exception:\n            self.status.set('ブラウザーを開けませんでした。URLをコピーして開いてください。')\n    def copy_answer(self):")
+p.write_text(s,encoding='utf-8')

@@ -1,0 +1,10 @@
+from pathlib import Path
+root=Path('outputs')
+s=(root/'tomeris_desktop_v011.py').read_text(encoding='utf-8-sig').replace('v0.11','v0.12')
+s=s.replace('from tomeris_plan_progress import DesktopService as PlanService','from tomeris_plan_history import DesktopService as PlanService\nfrom tomeris_plan_history_ui import PlanHistoryPanel')
+s=s.replace("('今日の計画','today'),", "('今日の計画','today'),('計画の履歴','plan_history'),")
+s=s.replace('pady=7,font=', 'pady=5,font=').replace('pady=4)\n            self.controls','pady=3)\n            self.controls')
+s=s.replace('    def open_google(self):', "        panel=getattr(self,'plan_history_panel',None)\n        if panel is not None:\n            panel.state()\n    def open_google(self):")
+s=s.replace('    def view(self,kind):', "    def view(self,kind):\n        if kind=='plan_history':\n            if not self.busy and not self.closing:\n                self.plan_history_panel=PlanHistoryPanel(self)\n            return")
+s=s.replace('                        if not today_open and not google_open', "                        history_open=getattr(self,'plan_history_panel',None) and self.plan_history_panel.window.winfo_exists()\n                        if not history_open and not today_open and not google_open")
+(root/'tomeris_desktop_v012.py').write_text(s,encoding='utf-8')

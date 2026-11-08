@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('outputs/tomeris_sources_ui.py');s=p.read_text(encoding='utf-8-sig').replace("self.show_selected();self.message.set(status)\n        self.run(lambda:self.app.service.check_source", "self.show_selected();self.message.set('再取得の結果を詳細欄に表示しました。')\n        self.run(lambda:self.app.service.check_source");p.write_text(s,encoding='utf-8')
+p=Path('work/check_sources_ui.py');s=p.read_text(encoding='utf-8-sig').replace("   assert before==app.service.catalogue.path.read_bytes()", "   bounds(panel.window,[panel.check,panel.delete,panel.exit]);assert panel.detail.winfo_height()>40\n   assert before==app.service.catalogue.path.read_bytes()");p.write_text(s,encoding='utf-8')

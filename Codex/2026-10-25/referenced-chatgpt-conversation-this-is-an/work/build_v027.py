@@ -1,0 +1,10 @@
+from pathlib import Path
+s=Path('outputs/tomeris_desktop_v0261.py').read_text(encoding='utf-8-sig').replace('v0.26.1','v0.27')
+s=s.replace('from tomeris_evidence_report_v0261 import DesktopService as PlanService','from tomeris_multisearch_service import DesktopService as PlanService\nfrom tomeris_methods_ui import MethodsPanel')
+s=s.replace("        menu.add_cascade(label='データ',menu=self.data_menu)","        menu.add_cascade(label='データ',menu=self.data_menu)\n        menu.add_command(label='調査方法・Google検索',command=self.open_methods)")
+s=s.replace('    def open_source(self,url):',"    def open_methods(self):\n        if self.busy or self.closing or self.service is None:return\n        self.methods_panel=MethodsPanel(self)\n    def open_source(self,url):")
+s=s.replace("        panel=getattr(self,'memory_panel',None)","        panel=getattr(self,'methods_panel',None)\n        if panel is not None:panel.state()\n        panel=getattr(self,'memory_panel',None)")
+s=s.replace('                        if not memory_open',"                        methods_open=getattr(self,'methods_panel',None) and self.methods_panel.window.winfo_exists()\n                        if not methods_open and not memory_open")
+s=s.replace('調査：Bing検索＋公開ページ本文／天気：Open-Meteo。保存済みの記憶は外部に送りません。',"調査方法は上部メニューで選べます。検索語・指定URLを外部へ送ります。保存済みの記憶は送りません。")
+s=s.replace('検索はBing、天気はOpen-Meteoを利用します。','調査方法は上部の「調査方法・Google検索」で選べます。初期設定はWikipediaです。天気はOpen-Meteoを利用します。')
+Path('outputs/tomeris_desktop_v027.py').write_text(s,encoding='utf-8')
